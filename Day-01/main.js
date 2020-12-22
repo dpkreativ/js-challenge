@@ -30,3 +30,34 @@
 
 /* comments can make code readable,
 easy to reuse and informative */
+
+// Check variable.js file
+
+// Check datatypes.js file
+
+let laptop;
+let bag;
+let car;
+var bedCoverColor;
+
+/*
+let firstName = "Divine";
+let lastName = "Philip";
+let maritalStatus = "Single";
+let country = "Nigeria";
+let age = 23;
+*/
+
+/*
+let firstName = "Divine",
+    lastName = "Philip",
+    maritalStatus = "Single",
+    country = "Nigeria",
+    age = 23;
+*/
+
+let myAge = 23;
+let yourAge = 100;
+
+console.log(myAge);
+console.log(yourAge);
