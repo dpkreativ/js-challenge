@@ -214,26 +214,26 @@ let cleanTextArray = cleanText.split(" ");
 console.log(cleanTextArray);
 console.log(cleanTextArray.length);
 
-console.log(
-  (function (array) {
-    let counts = {};
-    let compare = 0;
-    let mostFrequent;
+function mostFrequentWord(array) {
+  let hashMap = {};
+  let compare = 0;
+  let mostFrequent;
 
-    for (let i = 0, len = array.length; i < len; i++) {
-      let word = array[i];
+  for (let i = 0, len = array.length; i < len; i++) {
+    let word = array[i];
 
-      if (counts[word] === undefined) {
-        counts[word] = 1;
-      } else {
-        counts[word] = counts[word] + 1;
-      }
-
-      if (counts[word] > compare) {
-        compare = counts[word];
-        mostFrequent = cleanTextArray[i];
-      }
+    if (hashMap[word] === undefined) {
+      hashMap[word] = 1;
+    } else {
+      hashMap[word] = hashMap[word] + 1;
     }
-    return mostFrequent;
-  })(cleanTextArray)
-);
+
+    if (hashMap[word] > compare) {
+      compare = hashMap[word];
+      mostFrequent = array[i];
+    }
+  }
+  return mostFrequent;
+}
+
+console.log(mostFrequentWord(cleanTextArray));
