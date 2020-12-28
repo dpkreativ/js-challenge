@@ -136,3 +136,62 @@ console.log(challengeTitle.trim());
 console.log(phrase.concat("JavaScript"));
 
 /*25*/ console.log(challenge.repeat(2));
+
+// === Exercise 2 ===
+/*1*/ let quote =
+  "The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.";
+console.log(quote);
+
+/*2*/ quote =
+  "\"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.\"";
+console.log(quote);
+
+/*3*/ let checkNumber = typeof "10" === typeof 10;
+console.log(checkNumber);
+checkNumber = typeof parseInt("10") === typeof 10;
+console.log(checkNumber);
+
+/*4*/ let checkFloat = parseFloat("9.8") === 10;
+console.log(checkFloat);
+checkFloat = Math.ceil(parseFloat("9.8")) === 10;
+console.log(checkFloat);
+
+/*5*/ let checkOn = "python".includes("on") === "jargon".includes("on");
+console.log(checkOn);
+
+/*6*/ console.log(
+  "I hope this course is not full of jargon.".includes("jargon") ===
+    "jargon".includes("jargon")
+);
+
+/*7*/ let randomNumber1 = Math.ceil(Math.random() * 100);
+console.log(randomNumber1);
+
+/*8*/ function getRandomNumber(min, max) {
+  return Math.ceil(Math.random() * (max - min + 1) + min);
+}
+let randomNumber2 = getRandomNumber(50, 100);
+console.log(randomNumber2);
+
+/*9*/ console.log(getRandomNumber(0, 255));
+
+/*10*/ console.log(
+  "JavaScript"[Math.ceil(Math.random() * ("JavaScript".length - 1))]
+);
+
+/*11*/ console.log(
+  "1 1 1 1 \n2 1 2 4 8 \n3 1 3 9 27 \n4 1 4 16 64 \n5 1 5 25 125"
+);
+
+console.log(funnyQuote.indexOf("because"));
+
+console.log(funnyQuote.lastIndexOf("because") + "because".length - 1);
+
+/*12*/ console.log(
+  funnyQuote.substr(
+    funnyQuote.indexOf("because"),
+    funnyQuote.lastIndexOf("because") +
+      "because".length -
+      funnyQuote.indexOf("because")
+  )
+);
