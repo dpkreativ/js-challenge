@@ -195,3 +195,45 @@ console.log(funnyQuote.lastIndexOf("because") + "because".length - 1);
       funnyQuote.indexOf("because")
   )
 );
+
+// === Exercise 3 ===
+
+/*1*/ let lovelyQuote =
+  "'Love is the best thing in this world. Some found their love and some are still looking for their love.'";
+console.log(lovelyQuote.match(/love/gi).length);
+
+/*2*/ console.log(funnyQuote.match(/because/gi).length);
+
+/*3*/ const sentence =
+  "%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching";
+
+let cleanText = sentence.replace(/[%$@#&;!]/gi, "");
+console.log(cleanText);
+let cleanTextArray = cleanText.split(" ");
+
+console.log(cleanTextArray);
+console.log(cleanTextArray.length);
+
+console.log(
+  (function (array) {
+    let counts = {};
+    let compare = 0;
+    let mostFrequent;
+
+    for (let i = 0, len = array.length; i < len; i++) {
+      let word = array[i];
+
+      if (counts[word] === undefined) {
+        counts[word] = 1;
+      } else {
+        counts[word] = counts[word] + 1;
+      }
+
+      if (counts[word] > compare) {
+        compare = counts[word];
+        mostFrequent = cleanTextArray[i];
+      }
+    }
+    return mostFrequent;
+  })(cleanTextArray)
+);
