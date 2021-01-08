@@ -115,3 +115,64 @@ YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 // ========= Solutions =========
 
 // === Exercise 1 ===
+/*1*/ let firstName = "Divine",
+  lastName = "Philip",
+  country = "Nigeria",
+  age = 23,
+  isMarried = false,
+  year = 2021;
+
+console.log(typeof firstName);
+console.log(typeof lastName);
+console.log(typeof country);
+console.log(typeof age);
+console.log(typeof isMarried);
+console.log(typeof year);
+
+/*2*/ let checkType = typeof "10" == typeof 10;
+console.log(checkType);
+
+/*3*/ checkType = parseInt("9.8") == 10;
+console.log(checkType);
+
+/*4i*/ console.log(10 == Math.ceil(parseFloat("9.8")));
+console.log(typeof "Egg" == typeof "fish");
+console.log(true);
+
+/*4ii*/ console.log(false);
+console.log(10 == Math.ceil(parseInt("9.8")));
+console.log("A good boy" == "A good girl");
+
+/*5i*/ console.log(4 > 3);
+/*5ii*/ console.log(4 >= 3);
+/*5iii*/ console.log(4 < 3);
+/*5iv*/ console.log(4 <= 3);
+/*5v*/ console.log(4 == 4);
+/*5vi*/ console.log(4 === 4);
+/*5vii*/ console.log(4 != 4);
+/*5viii*/ console.log(4 !== 4);
+/*5ix*/ console.log(4 != "4");
+/*5x*/ console.log(4 == "4");
+/*5xi*/ console.log(4 === "4");
+/*5xii*/ console.log("python".length != "jargon".length);
+
+/*6i*/ console.log(4 > 3 && 10 < 12);
+/*6ii*/ console.log(4 > 3 && 10 > 12);
+/*6iii*/ console.log(4 > 3 || 10 < 12);
+/*6iv*/ console.log(4 > 3 || 10 > 12);
+/*6v*/ console.log(!(4 > 3));
+/*6vi*/ console.log(!(4 < 3));
+/*6vii*/ console.log(!false);
+/*6viii*/ console.log(!(4 > 3 && 10 < 12));
+/*6ix*/ console.log(!(4 > 3 && 10 > 12));
+/*6x*/ console.log(!(4 === "4"));
+/*6xi*/ console.log(!("python".includes("on") && "jargon".includes("on")));
+
+let calendar = new Date();
+/*7i*/ console.log(calendar.getFullYear());
+/*7ii*/ console.log(calendar.getMonth());
+/*7iii*/ console.log(calendar.getDate());
+/*7iv*/ console.log(calendar.getDay());
+/*7v*/ console.log(calendar.getHours());
+/*7vi*/ console.log(calendar.getMinutes());
+/*7vii*/ console.log(calendar.getTime());
