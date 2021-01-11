@@ -176,3 +176,39 @@ let calendar = new Date();
 /*7v*/ console.log(calendar.getHours());
 /*7vi*/ console.log(calendar.getMinutes());
 /*7vii*/ console.log(calendar.getTime());
+
+// === Exercise 2 ===
+/*1*/ function triangleArea() {
+  let base = prompt("enter base");
+  let height = prompt("enter height");
+  let answer = 0.5 * base * height;
+  alert(`Area of the triangle is ${answer}`);
+}
+// triangleArea();
+
+/*2*/ function trianglePerimeter() {
+  let a = prompt("enter side a");
+  let b = prompt("enter side b");
+  let c = prompt("enter side c");
+  let answer = parseInt(a) + parseInt(b) + parseInt(c);
+  alert(`The perimeter of the triangle is ${answer}`);
+}
+// trianglePerimeter();
+
+/*3*/ function rectangleArea() {
+  let length = prompt("enter rectangle length");
+  let width = prompt("enter rectangle width");
+  let answer = length * width;
+  alert(`Area of the rectangle is ${answer}`);
+}
+// rectangleArea();
+
+/*4*/ const Pi = 3.14;
+function circleArea() {
+  let r = prompt("enter radius of circle");
+  let answer = Pi * r * r;
+  alert(`Area of the circle is ${answer}`);
+}
+// circleArea();
+
+/*5*/
