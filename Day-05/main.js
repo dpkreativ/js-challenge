@@ -293,3 +293,5 @@ Remove all IT companies
   // return itCompanies;
 };
 console.log(removeAllCompanies());
+
+// === Exercise 2 ===
