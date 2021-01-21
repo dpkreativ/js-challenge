@@ -28,3 +28,31 @@ do {
   i++;
 } while (i <= 10);
 console.log(doWhileArray);
+
+/*2
+Iterate 10 to 0 using for loop, do the same using while and do while loop
+
+=== Solution ===
+*/ const reverseForArray = [];
+for (i = 10; i >= 0; i--) {
+  reverseForArray.push(i);
+}
+console.log(reverseForArray);
+
+// using while loop
+const reverseWhileArray = [];
+i = 10;
+while (i >= 0) {
+  reverseWhileArray.push(i);
+  i--;
+}
+console.log(reverseWhileArray);
+
+// using do while loop
+const reverseDoWhileArray = [];
+i = 10;
+do {
+  reverseDoWhileArray.push(i);
+  i--;
+} while (i >= 0);
+console.log(reverseDoWhileArray);
