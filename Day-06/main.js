@@ -119,3 +119,99 @@ for (i = 0; i <= 10; i++) {
   multiplicationTable = `${i} * ${i} = ${i * i}`;
   console.log(multiplicationTable);
 }
+
+/*6
+Using loop print the following pattern
+
+ i    i^2   i^3
+ 0    0     0
+ 1    1     1
+ 2    4     8
+ 3    9     27
+ 4    16    64
+ 5    25    125
+ 6    36    216
+ 7    49    343
+ 8    64    512
+ 9    81    729
+ 10   100   1000
+
+ === Solution ===
+*/ let exponentLoop =
+  "i    i^2   i^3";
+
+i = 0;
+
+do {
+  console.log(exponentLoop);
+  exponentLoop = `${i}    ${i ** 2}   ${i ** 3}`;
+  i++;
+} while (i <= 1 + 10);
+// for (i = 0; i <= 10; i++) {
+//   exponentLoop = `${i}    ${i ** 2}   ${i ** 3}`;
+//   console.log(exponentLoop);
+// }
+
+/*7
+Use for loop to iterate from 0 to 100 and print only even numbers
+
+=== Solution ===
+ */ const printEvenNumbers = (
+  max
+) => {
+  let evenNumbers = [];
+  for (i = 0; i <= max; i++) {
+    if (i % 2 === 0) {
+      evenNumbers.push(i);
+    } else {
+      continue;
+    }
+  }
+  return evenNumbers;
+};
+console.log(printEvenNumbers(100));
+/*8
+Use for loop to iterate from 0 to 100 and print only odd numbers
+
+=== Solution ===
+ */ const printOddNumbers = (
+  max
+) => {
+  let oddNumbers = [];
+  for (i = 0; i <= max; i++) {
+    if (i % 2 === 1) {
+      oddNumbers.push(i);
+    } else {
+      continue;
+    }
+  }
+  return oddNumbers;
+};
+console.log(printOddNumbers(100));
+
+/*9
+Use for loop to iterate from 0 to 100 and print only prime numbers
+
+=== Solution ===
+*/
+
+/*10
+Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+
+=== Solution ===
+*/ const printSumOfNumbers = (
+  max
+) => {
+  let sum = 0;
+  for (i = 0; i <= max; i++) {
+    sum = sum + i;
+  }
+  return `The sum of all numbers from 0 to ${max} is ${sum}.`;
+};
+console.log(printSumOfNumbers(100));
+
+/*10
+Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+
+=== Solution ===
+*/
