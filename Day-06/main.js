@@ -249,4 +249,57 @@ Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum
   let arrayOfSums = new Array(evenSum, oddSum);
   return arrayOfSums;
 };
-console.log(arrayOfSumOfEvenAndOdds(100));
+// console.log(arrayOfSumOfEvenAndOdds(100));
+
+/*13
+Develop a small script which generate array of 5 random numbers
+
+=== Solution ===
+*/ const randomNumbers = (
+  max
+) => {
+  let arrayOfNumbers = [];
+  for (i = 0; i < max; i++) {
+    arrayOfNumbers.push(Math.ceil(Math.random() * 100));
+  }
+  return arrayOfNumbers;
+};
+// console.log(randomNumbers(5));
+
+/*14
+Develop a small script which generate array of 5 random numbers and the numbers must be unique
+
+=== Solution ===
+ */ const uniqueRandomNumbers = (
+  max
+) => {
+  let arrayOfNumbers = [],
+    randomNumber;
+  for (i = 0; i < max; i++) {
+    randomNumber = Math.ceil(Math.random() * 100);
+    if (!arrayOfNumbers.includes(randomNumber)) {
+      arrayOfNumbers.push(randomNumber);
+    }
+  }
+  return arrayOfNumbers;
+};
+// console.log(uniqueRandomNumbers(5));
+
+/*15
+Develop a small script which generate a six characters random id:
+
+=== Solution ===
+*/ const randomCharacterGenerator = (
+  max
+) => {
+  let characterPool = "0123456789abcdefghijklmnopqrstuvwxyz";
+  let poolArray = characterPool.split("");
+  let randomIdArray = [];
+  for (i = 0; i < max; i++) {
+    randomIdIndex = Math.floor(Math.random() * poolArray.length);
+    randomIdArray.push(poolArray[randomIdIndex]);
+  }
+  let randomId = randomIdArray.join("");
+  return randomId;
+};
+// console.log(randomCharacterGenerator(6));
