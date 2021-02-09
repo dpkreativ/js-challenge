@@ -9,7 +9,7 @@ const forArray = [];
 for (i = 0; i <= 10; i++) {
   forArray.push(i);
 }
-console.log(forArray);
+// console.log(forArray);
 
 // using while loop
 const whileArray = [];
@@ -18,7 +18,7 @@ while (i <= 10) {
   whileArray.push(i);
   i++;
 }
-console.log(whileArray);
+// console.log(whileArray);
 
 // using do while loop
 const doWhileArray = [];
@@ -27,7 +27,7 @@ do {
   doWhileArray.push(i);
   i++;
 } while (i <= 10);
-console.log(doWhileArray);
+// console.log(doWhileArray);
 
 /*2
 Iterate 10 to 0 using for loop, do the same using while and do while loop
@@ -37,7 +37,7 @@ Iterate 10 to 0 using for loop, do the same using while and do while loop
 for (i = 10; i >= 0; i--) {
   reverseForArray.push(i);
 }
-console.log(reverseForArray);
+// console.log(reverseForArray);
 
 // using while loop
 const reverseWhileArray = [];
@@ -46,7 +46,7 @@ while (i >= 0) {
   reverseWhileArray.push(i);
   i--;
 }
-console.log(reverseWhileArray);
+// console.log(reverseWhileArray);
 
 // using do while loop
 const reverseDoWhileArray = [];
@@ -55,7 +55,7 @@ do {
   reverseDoWhileArray.push(i);
   i--;
 } while (i >= 0);
-console.log(reverseDoWhileArray);
+// console.log(reverseDoWhileArray);
 
 /*3
 Iterate 0 to n using for loop
@@ -67,14 +67,14 @@ Iterate 0 to n using for loop
   let newArr = [];
   if (n > 0) {
     for (i = 0; i < n; i++) {
-      console.log(newArr.push[i]);
+      // console.log(newArr.push[i]);
     }
   } else if (n < 0) {
     for (i = 0; i > n; i--) {
-      console.log(newArr.push[i]);
+      // console.log(newArr.push[i]);
     }
   } else {
-    console.log(newArr);
+    // console.log(newArr);
   }
 };
 
@@ -94,7 +94,7 @@ Write a loop that makes the following pattern using console.log():
   "";
 for (i = 0; i < 7; i++) {
   hashtag = hashtag + "#";
-  console.log(hashtag);
+  // console.log(hashtag);
 }
 
 /*5
@@ -117,7 +117,7 @@ Use loop to print the following pattern:
   "";
 for (i = 0; i <= 10; i++) {
   multiplicationTable = `${i} * ${i} = ${i * i}`;
-  console.log(multiplicationTable);
+  // console.log(multiplicationTable);
 }
 
 /*6
@@ -143,7 +143,7 @@ Using loop print the following pattern
 i = 0;
 
 do {
-  console.log(exponentLoop);
+  // console.log(exponentLoop);
   exponentLoop = `${i}    ${i ** 2}   ${i ** 3}`;
   i++;
 } while (i <= 1 + 10);
@@ -169,7 +169,7 @@ Use for loop to iterate from 0 to 100 and print only even numbers
   }
   return evenNumbers;
 };
-console.log(printEvenNumbers(100));
+// console.log(printEvenNumbers(100));
 /*8
 Use for loop to iterate from 0 to 100 and print only odd numbers
 
@@ -187,7 +187,7 @@ Use for loop to iterate from 0 to 100 and print only odd numbers
   }
   return oddNumbers;
 };
-console.log(printOddNumbers(100));
+// console.log(printOddNumbers(100));
 
 /*9
 Use for loop to iterate from 0 to 100 and print only prime numbers
@@ -208,10 +208,45 @@ Use for loop to iterate from 0 to 100 and print the sum of all numbers.
   }
   return `The sum of all numbers from 0 to ${max} is ${sum}.`;
 };
-console.log(printSumOfNumbers(100));
+// console.log(printSumOfNumbers(100));
 
-/*10
+/*11
 Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 
 === Solution ===
-*/
+*/ const printSumOfOddsAndEvens = (
+  max
+) => {
+  let evenSum = 0,
+    oddSum = 0;
+  for (i = 0; i <= max; i++) {
+    if (i % 2 === 0) {
+      evenSum = evenSum + i;
+    } else {
+      oddSum = oddSum + i;
+    }
+  }
+  return `The sum of all evens from 0 to ${max} is ${evenSum}, and the sum of all odds from 0 to ${max} is ${oddSum}`;
+};
+// console.log(printSumOfOddsAndEvens(100));
+
+/*12
+Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
+
+=== Solution ===
+*/ const arrayOfSumOfEvenAndOdds = (
+  max
+) => {
+  let evenSum = 0;
+  oddSum = 0;
+  for (i = 0; i <= max; i++) {
+    if (i % 2 === 0) {
+      evenSum = evenSum + i;
+    } else {
+      oddSum = oddSum + i;
+    }
+  }
+  let arrayOfSums = new Array(evenSum, oddSum);
+  return arrayOfSums;
+};
+console.log(arrayOfSumOfEvenAndOdds(100));
