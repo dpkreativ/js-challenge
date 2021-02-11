@@ -171,4 +171,38 @@ Obese: BMI is 30 or more
     `Your BMI is ${bmi}. You're obese. A gym membership is highly recommended!`;
   }
 };
-console.log(calcBMI(76, 1.86));
+// console.log(calcBMI(76, 1.86));
+
+/*14
+Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
+*/ const checkSeason = (
+  month
+) => {
+  let season;
+  switch (month) {
+    case "December":
+    case "January":
+    case "February":
+      season = `It's Winter! Grab a sweater or two.`;
+      break;
+    case "March":
+    case "April":
+    case "May":
+      season = `It's Spring! Feel its freshness.`;
+      break;
+    case "June":
+    case "July":
+    case "August":
+      season = `It's Summer! Hot hot everywhere.`;
+      break;
+    case "September":
+    case "October":
+    case "November":
+      season = `It's Autumn! Watch the leaves fall.`;
+
+    default:
+      break;
+  }
+  return season;
+};
+console.log(checkSeason("August"));
