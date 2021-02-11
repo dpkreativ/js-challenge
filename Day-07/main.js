@@ -82,4 +82,16 @@ Area of a circle is calculated as follows: area = π x r x r. Write a function w
   let area = Math.floor(Math.PI * r * r);
   return area;
 };
-console.log(areaOfCircle(4));
+// console.log(areaOfCircle(4));
+
+/*8
+Circumference of a circle is calculated as follows: circumference = 2πr. Write a function which calculates circumOfCircle
+
+=== Solution ===
+*/ const circumOfCircle = (
+  r
+) => {
+  let circumference = Math.floor(2 * Math.PI * r);
+  return circumference;
+};
+console.log(circumOfCircle(6));
