@@ -106,4 +106,16 @@ Density of a substance is calculated as follows:density= mass/volume. Write a fu
 ) => {
   return mass / volume;
 };
-console.log(density(60, 12));
+// console.log(density(60, 12));
+
+/*10
+Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. Write a function which calculates a speed of a moving object, speed.
+
+=== Solution ===
+*/ const speed = (
+  distance,
+  time
+) => {
+  return distance / time;
+};
+// console.log(speed(500, 30));
