@@ -70,4 +70,16 @@ A volume of a rectangular prism is calculated as follows: volume = length x widt
   let volume = l * w * h;
   return volume;
 };
-console.log(volumeOfRectPrism(3, 6, 5));
+// console.log(volumeOfRectPrism(3, 6, 5));
+
+/*7
+Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
+
+=== Solution ===
+*/ const areaOfCircle = (
+  r
+) => {
+  let area = Math.floor(Math.PI * r * r);
+  return area;
+};
+console.log(areaOfCircle(4));
