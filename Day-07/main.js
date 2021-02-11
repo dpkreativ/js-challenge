@@ -119,3 +119,15 @@ Speed is calculated by dividing the total distance covered by a moving object di
   return distance / time;
 };
 // console.log(speed(500, 30));
+
+/*11
+Weight of a substance is calculated as follows: weight = mass x gravity. Write a function which calculates weight.
+
+=== Solution ===
+*/ const weight = (
+  mass,
+  gravity
+) => {
+  return mass * gravity;
+};
+// console.log(weight(400, 9.8));
