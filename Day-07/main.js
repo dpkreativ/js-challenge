@@ -94,4 +94,16 @@ Circumference of a circle is calculated as follows: circumference = 2πr. Write 
   let circumference = Math.floor(2 * Math.PI * r);
   return circumference;
 };
-console.log(circumOfCircle(6));
+// console.log(circumOfCircle(6));
+
+/*9
+Density of a substance is calculated as follows:density= mass/volume. Write a function which calculates density.
+
+=== Solution ===
+*/ const density = (
+  mass,
+  volume
+) => {
+  return mass / volume;
+};
+console.log(density(60, 12));
