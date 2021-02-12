@@ -29,7 +29,7 @@ Get name, legs, color, age and bark value from the dog object
 
 === Solution ===
 */ console.log(
-  `${dog.name} is a dog. He has ${dog.legs} legs. It's body color is ${
+  `${dog.name} is a dog. He has ${dog.legs} legs. His body color is ${
     dog.color
   }. He is ${dog.age} years old. When he sees a squirrel, he goes ${dog.bark()}`
 );
