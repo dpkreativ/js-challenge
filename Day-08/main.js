@@ -15,10 +15,21 @@ Print the the dog object on the console
 Add name, legs, color, age and bark properties for the dog object. The bark property is a method which return woof woof
 
 === Solution ===
-*/ dog.legs =
-  "4";
+*/ dog.name =
+  "Bingo";
+dog.legs = "4";
 dog.color = "brown";
 dog.age = 4;
 dog.bark = function () {
   return "woof woof";
 };
+
+/*4
+Get name, legs, color, age and bark value from the dog object
+
+=== Solution ===
+*/ console.log(
+  `${dog.name} is a dog. He has ${dog.legs} legs. It's body color is ${
+    dog.color
+  }. He is ${dog.age} years old. When he sees a squirrel, he goes ${dog.bark()}`
+);
