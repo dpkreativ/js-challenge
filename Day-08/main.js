@@ -33,3 +33,18 @@ Get name, legs, color, age and bark value from the dog object
     dog.color
   }. He is ${dog.age} years old. When he sees a squirrel, he goes ${dog.bark()}`
 );
+
+/*5
+Set new properties the dog object: breed, getDogInfo
+
+=== Solution ===
+*/ dog.breed =
+  "German Shepherd";
+dog.getDogInfo = function () {
+  return `${this.name} is a ${this.breed}. It has ${
+    this.legs
+  } legs and it's body color is ${
+    this.color
+  }. It doesn't speak English, but it's primary language is ${this.bark()}.`;
+};
+console.log(dog.getDogInfo());
