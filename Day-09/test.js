@@ -38,3 +38,14 @@ randomNumbers.sort(function (a, b) {
   return a - b;
 });
 console.log(randomNumbers);
+
+// sorting through an array while preserving the original array
+let arr = [1, 2, 3, 4, 5];
+// one way is to use Array.slice
+arr
+  .slice()
+  .sort
+  // sort-function-here
+  ();
+
+// Array.slice returns a copy of the array. You can manipulate this copy however you wish without modifying the original array.
