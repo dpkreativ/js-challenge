@@ -30,3 +30,11 @@ Define a call function before you them in forEach, map, filter or reduce.
 === Solution ===
 I don't understand the question... will ask Asabeneh
 */
+
+/*3
+Use forEach to console.log each country in the countries array.
+
+=== Solution ===
+*/ countries.forEach(
+  (arr) => console.log(arr)
+);
