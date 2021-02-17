@@ -23,3 +23,10 @@ filter is used to filter through an array and return elements based on a set con
 
 reduce is used in its basic form to loop through the elements of an array and compress them together either by adding or subtracting... based on the code written. It takes in at least two arguments, one for the first index in the array, and another for the last index in the array.
 */
+
+/*2
+Define a call function before you them in forEach, map, filter or reduce.
+
+=== Solution ===
+I don't understand the question... will ask Asabeneh
+*/
