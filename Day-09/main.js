@@ -35,6 +35,12 @@ I don't understand the question... will ask Asabeneh
 Use forEach to console.log each country in the countries array.
 
 === Solution ===
-*/ countries.forEach(
-  (arr) => console.log(arr)
-);
+*/
+countries.forEach((arr) => console.log(arr));
+
+/*4
+Use forEach to console.log each name in the names array.
+
+=== Solution ===
+ */
+names.forEach((arr) => console.log(arr));
