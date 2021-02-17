@@ -10,4 +10,16 @@ const products = [
   { product: "coffee", price: 10 },
   { product: "tea", price: "" },
 ];
-/*1*/
+/*1
+Explain the difference between forEach, map, filter, and reduce.
+
+=== Solution ===
+
+forEach is used to iterate through an array and perform specific actions for each element.
+
+map is used to iterate through an array, and run the code for each element, and return the result in a new array that has already been created.
+
+filter is used to filter through an array and return elements based on a set condition.
+
+reduce is used in its basic form to loop through the elements of an array and compress them together either by adding or subtracting... based on the code written. It takes in at least two arguments, one for the first index in the array, and another for the last index in the array.
+*/
