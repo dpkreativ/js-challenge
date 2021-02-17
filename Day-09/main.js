@@ -36,11 +36,18 @@ Use forEach to console.log each country in the countries array.
 
 === Solution ===
 */
-countries.forEach((arr) => console.log(arr));
+// countries.forEach((arr) => console.log(arr));
 
 /*4
 Use forEach to console.log each name in the names array.
 
 === Solution ===
  */
-names.forEach((arr) => console.log(arr));
+// names.forEach((arr) => console.log(arr));
+
+/*5
+Use forEach to console.log each number in the numbers array.
+
+=== Solution ===
+*/
+numbers.forEach((arr) => console.log(arr));
