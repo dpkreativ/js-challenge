@@ -74,4 +74,12 @@ Use map to create a new array by changing each number to square in the numbers a
 === Solution ===
 */
 const squaredNumbers = numbers.map((arr) => arr ** 2);
-console.log(squaredNumbers);
+// console.log(squaredNumbers);
+
+/*9
+Use map to change to each name to uppercase in the names array
+
+=== Solution ===
+*/
+const namesUppercase = names.map((arr) => arr.toUpperCase());
+// console.log(namesUppercase);
