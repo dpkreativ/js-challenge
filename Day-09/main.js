@@ -51,7 +51,7 @@ Use forEach to console.log each number in the numbers array.
 
 === Solution ===
 */
-// numbers.forEach((arr) => console.log(arr));
+numbers.forEach((arr) => (logThis = arr));
 
 /*6
 Use map to create a new array by changing each country to uppercase in the countries array.
@@ -59,7 +59,7 @@ Use map to create a new array by changing each country to uppercase in the count
 === Solution ===
 */
 const countriesUppercase = countries.map((arr) => arr.toUpperCase());
-logThis = countriesUppercase;
+// logThis = countriesUppercase;
 
 /*7
 Use map to create an array of countries length from countries array.
@@ -67,7 +67,7 @@ Use map to create an array of countries length from countries array.
 === Solution ===
 */
 const countriesLength = countries.map((arr) => arr.length);
-logThis = countriesLength;
+// logThis = countriesLength;
 
 /*8*/
 
