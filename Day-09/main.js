@@ -10,7 +10,6 @@ const products = [
   { product: "coffee", price: 10 },
   { product: "tea", price: "" },
 ];
-let logThis;
 /*1
 Explain the difference between forEach, map, filter, and reduce.
 
@@ -51,7 +50,7 @@ Use forEach to console.log each number in the numbers array.
 
 === Solution ===
 */
-numbers.forEach((arr) => (logThis = arr));
+// numbers.forEach((arr) => console.log(arr));
 
 /*6
 Use map to create a new array by changing each country to uppercase in the countries array.
@@ -59,7 +58,7 @@ Use map to create a new array by changing each country to uppercase in the count
 === Solution ===
 */
 const countriesUppercase = countries.map((arr) => arr.toUpperCase());
-// logThis = countriesUppercase;
+// console.log(countriesUppercase);
 
 /*7
 Use map to create an array of countries length from countries array.
@@ -67,9 +66,12 @@ Use map to create an array of countries length from countries array.
 === Solution ===
 */
 const countriesLength = countries.map((arr) => arr.length);
-// logThis = countriesLength;
+// console.log(countriesLength);
 
-/*8*/
+/*8
+Use map to create a new array by changing each number to square in the numbers array
 
-// stuff to log to console
-console.log(logThis);
+=== Solution ===
+*/
+const squaredNumbers = numbers.map((arr) => arr ** 2);
+console.log(squaredNumbers);
