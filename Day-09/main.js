@@ -50,4 +50,12 @@ Use forEach to console.log each number in the numbers array.
 
 === Solution ===
 */
-numbers.forEach((arr) => console.log(arr));
+// numbers.forEach((arr) => console.log(arr));
+
+/*6
+Use map to create a new array by changing each country to uppercase in the countries array.
+
+=== Solution ===
+*/
+const countriesUppercase = countries.map((arr) => arr.toUpperCase());
+console.log(countriesUppercase);
