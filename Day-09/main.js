@@ -93,3 +93,11 @@ const productPrices = products.map(
   (arr) => `${arr.product} costs $${arr.price}.`
 );
 // console.log(productPrices);
+
+/*11
+Use filter to filter out countries containing land.
+
+=== Solution ===
+*/
+const countriesContainingLand = countries.filter((arr) => arr.includes(`land`));
+// console.log(countriesContainingLand);
