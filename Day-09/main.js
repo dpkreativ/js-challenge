@@ -101,3 +101,11 @@ Use filter to filter out countries containing land.
 */
 const countriesContainingLand = countries.filter((arr) => arr.includes(`land`));
 // console.log(countriesContainingLand);
+
+/*12
+Use filter to filter out countries having six characters.
+
+=== Solution ===
+*/
+const countriesWithSixCharacters = countries.filter((arr) => arr.length == 6);
+// console.log(countriesWithSixCharacters);
