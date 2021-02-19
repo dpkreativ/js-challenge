@@ -119,3 +119,11 @@ const countriesWithMoreThanSixCharacters = countries.filter(
   (arr) => arr.length >= 6
 );
 // console.log(countriesWithMoreThanSixCharacters);
+
+/*14
+Use filter to filter out country start with 'F'
+
+=== Solution ===
+*/
+const startWithF = countries.filter((arr) => arr[0] == `F`);
+// console.log(startWithF);
