@@ -83,3 +83,13 @@ Use map to change to each name to uppercase in the names array
 */
 const namesUppercase = names.map((arr) => arr.toUpperCase());
 // console.log(namesUppercase);
+
+/*10
+Use map to map the products array to its corresponding prices.
+
+=== Solution ===
+*/
+const productPrices = products.map(
+  (arr) => `${arr.product} costs $${arr.price}.`
+);
+// console.log(productPrices);
