@@ -89,9 +89,12 @@ Use map to map the products array to its corresponding prices.
 
 === Solution ===
 */
-const productPrices = products.map(
-  (arr) => `${arr.product} costs $${arr.price}.`
-);
+const productPrices = products.map((arr) => {
+  if (typeof arr.price !== "number") {
+    arr.price = 0;
+  }
+  return `${arr.product} costs $${arr.price}.`;
+});
 // console.log(productPrices);
 
 /*11
@@ -99,7 +102,11 @@ Use filter to filter out countries containing land.
 
 === Solution ===
 */
-const countriesContainingLand = countries.filter((arr) => arr.includes(`land`));
+const countriesContainingLand = countries.filter((arr) => {
+  if (arr.includes(`land`) || arr.includes(`Land`)) {
+    return arr;
+  }
+});
 // console.log(countriesContainingLand);
 
 /*12
@@ -127,3 +134,16 @@ Use filter to filter out country start with 'F'
 */
 const startWithF = countries.filter((arr) => arr[0] == `F`);
 // console.log(startWithF);
+
+/*15
+Use filter to filter out only prices with values.
+
+=== Solution ===
+*/ const pricesWithValues = products.filter(
+  (arr) => {
+    if (typeof arr.price == "number") {
+      return arr.price;
+    }
+  }
+);
+// console.log(pricesWithValues);
