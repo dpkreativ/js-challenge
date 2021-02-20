@@ -147,3 +147,69 @@ Use filter to filter out only prices with values.
   }
 );
 // console.log(pricesWithValues);
+
+/*16
+Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
+
+=== Solution ===
+*/
+
+/*17
+Use reduce to sum all the numbers in the numbers array.
+
+=== Solution ===
+*/
+
+/*18
+Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+
+=== Solution ===
+*/
+
+/*19
+Explain the difference between some and every
+
+=== Solution ===
+*/
+
+/*20
+Use some to check if some names' length greater than seven in names array
+
+=== Solution ===
+*/
+
+/*21
+Use every to check if all the countries contain the word land
+
+=== Solution ===
+*/
+
+/*22
+Explain the difference between find and findIndex.
+
+=== Solution ===
+*/
+
+/*23
+Use find to find the first country containing only six letters in the countries array
+
+=== Solution ===
+*/
+
+/*24
+Use findIndex to find the position of the first country containing only six letters in the countries array
+
+=== Solution ===
+*/
+
+/*25
+Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+
+=== Solution ===
+*/
+
+/*26
+Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+
+=== Solution ===
+*/
