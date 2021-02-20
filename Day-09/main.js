@@ -153,6 +153,15 @@ Declare a function called getStringLists which takes an array as a parameter and
 
 === Solution ===
 */
+const getStringLists = (arr) => {
+  let stringLists = arr.filter((element) => {
+    if (typeof element == "string") {
+      return element;
+    }
+  });
+  return stringLists;
+};
+// console.log(getStringLists(["Eggs", 1, true, "Salt", "Music", 3, null]));
 
 /*17
 Use reduce to sum all the numbers in the numbers array.
