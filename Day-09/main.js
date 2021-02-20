@@ -154,7 +154,7 @@ Declare a function called getStringLists which takes an array as a parameter and
 === Solution ===
 */
 const getStringLists = (arr) => {
-  let stringLists = arr.filter((element) => {
+  const stringLists = arr.filter((element) => {
     if (typeof element == "string") {
       return element;
     }
