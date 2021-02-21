@@ -168,12 +168,17 @@ Use reduce to sum all the numbers in the numbers array.
 
 === Solution ===
 */
+const sumOfNumbers = numbers.reduce((acc, cur) => acc + cur, 0);
+// console.log(sumOfNumbers);
 
 /*18
 Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 
 === Solution ===
-*/
+*/ const northEuropeanCountries = countries.reduce(
+  (acc, cur, index, arr) => {}
+);
+// console.log(northEuropeanCountries);
 
 /*19
 Explain the difference between some and every
