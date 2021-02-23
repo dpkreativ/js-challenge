@@ -202,6 +202,7 @@ Use every to check if all the countries contain the word land
 Explain the difference between find and findIndex.
 
 === Solution ===
+"find" returns the first element which satisfies the condition and "findIndex" return the position of the first element which satisfies the condition.
 */
 
 /*23
