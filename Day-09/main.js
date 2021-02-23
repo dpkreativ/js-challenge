@@ -184,6 +184,7 @@ Use reduce to concatenate all the countries and to produce this sentence: Estoni
 Explain the difference between some and every
 
 === Solution ===
+"every" checks if all the elements are similar in one aspect, while "some" checks if some of the elements are similar in one aspect.
 */
 
 /*20
