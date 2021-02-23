@@ -215,6 +215,8 @@ Use find to find the first country containing only six letters in the countries 
 
 === Solution ===
 */
+const firstSixLetterCountry = countries.find((arr) => arr.length === 6);
+// console.log(firstSixLetterCountry);
 
 /*24
 Use findIndex to find the position of the first country containing only six letters in the countries array
