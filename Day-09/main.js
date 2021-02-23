@@ -176,9 +176,16 @@ Use reduce to concatenate all the countries and to produce this sentence: Estoni
 
 === Solution ===
 */ const northEuropeanCountries = countries.reduce(
-  (acc, cur, index, arr) => {}
+  (acc, cur, index, arr) => {
+    // if (index < 4) {
+    //   return `${acc}, ${cur}`;
+    // }
+    // if (index >= 4) {
+    //   return (cur = `and ${cur} are north European countries`);
+    // }
+  }
 );
-// console.log(northEuropeanCountries);
+console.log(northEuropeanCountries);
 
 /*19
 Explain the difference between some and every
