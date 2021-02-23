@@ -192,9 +192,7 @@ Use some to check if some names' length greater than seven in names array
 
 === Solution ===
 */
-const namesGreaterThanSeven = names.some((arr) => {
-  return arr.length > 7;
-});
+const namesGreaterThanSeven = names.some((arr) => arr.length > 7);
 console.log(namesGreaterThanSeven);
 
 /*21
