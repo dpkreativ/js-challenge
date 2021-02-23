@@ -223,6 +223,10 @@ Use findIndex to find the position of the first country containing only six lett
 
 === Solution ===
 */
+const indexOfFirstSixLetterCountry = countries.findIndex(
+  (arr) => arr.length === 6
+);
+// console.log(indexOfFirstSixLetterCountry);
 
 /*25
 Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
