@@ -175,11 +175,14 @@ const sumOfNumbers = numbers.reduce((acc, cur) => acc + cur, 0);
 Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 
 === Solution ===
-*/ const northEuropeanCountries = countries
-  .reduce((acc, cur) => `${acc}, ${cur}`)
-  .concat(` are north European countries`);
-
-console.log(northEuropeanCountries);
+*/
+const northEuropeanCountries = () => {
+  countries[countries.length - 1] = `and ${
+    countries[countries.length - 1]
+  } are north European countries`;
+  return countries.reduce((acc, cur) => `${acc}, ${cur}`);
+};
+console.log(northEuropeanCountries());
 
 /*19
 Explain the difference between some and every
