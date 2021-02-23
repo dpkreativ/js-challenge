@@ -175,11 +175,15 @@ const sumOfNumbers = numbers.reduce((acc, cur) => acc + cur, 0);
 Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 
 === Solution ===
-*/ const northEuropeanCountries = countries
-  .reduce((acc, cur) => `${acc}, ${cur}`)
-  .concat(` are north European countries`);
-
-console.log(northEuropeanCountries);
+*/
+const northEuropeanCountries = () => {
+  const newCountries = countries.map((arr) => arr);
+  newCountries[newCountries.length - 1] = `and ${
+    newCountries[newCountries.length - 1]
+  } are north European countries`;
+  return newCountries.reduce((acc, cur) => `${acc}, ${cur}`);
+};
+console.log(northEuropeanCountries());
 
 /*19
 Explain the difference between some and every
@@ -244,3 +248,5 @@ Use findIndex to find the position of Russia if it doesn't exist in the array yo
 */
 const positionOfRussia = countries.findIndex((arr) => arr === "Russia");
 // console.log(positionOfRussia);
+
+console.log(countries);
