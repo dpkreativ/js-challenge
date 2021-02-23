@@ -192,6 +192,10 @@ Use some to check if some names' length greater than seven in names array
 
 === Solution ===
 */
+const namesGreaterThanSeven = names.some((arr) => {
+  return arr.length > 7;
+});
+console.log(namesGreaterThanSeven);
 
 /*21
 Use every to check if all the countries contain the word land
