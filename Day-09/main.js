@@ -241,3 +241,5 @@ Use findIndex to find the position of Russia if it doesn't exist in the array yo
 
 === Solution ===
 */
+const positionOfRussia = countries.findIndex((arr) => arr === "Russia");
+console.log(positionOfRussia);
