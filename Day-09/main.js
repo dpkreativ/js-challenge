@@ -200,6 +200,8 @@ Use every to check if all the countries contain the word land
 
 === Solution ===
 */
+const checkCountries = countries.every((arr) => arr.includes("land"));
+console.log(checkCountries);
 
 /*22
 Explain the difference between find and findIndex.
