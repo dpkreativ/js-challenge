@@ -177,10 +177,11 @@ Use reduce to concatenate all the countries and to produce this sentence: Estoni
 === Solution ===
 */
 const northEuropeanCountries = () => {
-  countries[countries.length - 1] = `and ${
-    countries[countries.length - 1]
+  const newCountries = countries.map((arr) => arr);
+  newCountries[newCountries.length - 1] = `and ${
+    newCountries[newCountries.length - 1]
   } are north European countries`;
-  return countries.reduce((acc, cur) => `${acc}, ${cur}`);
+  return newCountries.reduce((acc, cur) => `${acc}, ${cur}`);
 };
 console.log(northEuropeanCountries());
 
@@ -247,3 +248,5 @@ Use findIndex to find the position of Russia if it doesn't exist in the array yo
 */
 const positionOfRussia = countries.findIndex((arr) => arr === "Russia");
 // console.log(positionOfRussia);
+
+console.log(countries);
