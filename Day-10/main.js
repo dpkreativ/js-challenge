@@ -22,7 +22,11 @@ for (i = 0; i <= 10; i++) {
 
 /*3
 Remove an element from a set
+
+=== Solution ===
 */
+const deleteNumber4 = numberSet.delete(4);
+// console.log(deleteNumber4);
 
 /*4
 Clear a set
