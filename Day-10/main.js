@@ -30,12 +30,16 @@ const deleteNumber4 = numberSet.delete(4);
 
 /*4
 Clear a set
+
+=== Solution ===
 */
 const clearSet = numberSet.clear();
 // console.log(numberSet);
 
 /*5
 Create a set of 5 string elements from array
+
+=== Solution ===
 */
 const stringArray = [
   "eggs",
