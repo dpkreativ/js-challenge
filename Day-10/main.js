@@ -37,6 +37,23 @@ const clearSet = numberSet.clear();
 /*5
 Create a set of 5 string elements from array
 */
+const stringArray = [
+  "eggs",
+  "milk",
+  "butter",
+  "cream",
+  "flour",
+  "oil",
+  "baking powder",
+];
+const stringSet = new Set();
+for (const element of stringArray) {
+  if (stringSet.size !== 5) {
+    stringSet.add(element);
+  }
+}
+
+// console.log(stringSet);
 
 /*6
 Create a map of countries and number of characters of a country
