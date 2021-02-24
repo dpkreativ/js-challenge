@@ -11,7 +11,14 @@ const firstSet = new Set();
 
 /*2
 Create a set containing 0 to 10 using loop
+
+=== Solution ===
 */
+const numberSet = new Set();
+for (i = 0; i <= 10; i++) {
+  numberSet.add(i);
+}
+// console.log(numberSet);
 
 /*3
 Remove an element from a set
