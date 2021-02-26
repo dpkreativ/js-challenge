@@ -61,7 +61,11 @@ let [e, pi, gravity, humanBodyTemp, waterBoilingTemp] = constants;
 
 /*2
 Destructure and assign the elements of countries array to fin, est, sw, den, nor
+
+=== Solution ===
 */
+let [fin, est, sw, den, nor] = countries;
+// console.log(fin, est, sw, den, nor);
 
 /*3
 Destructure the rectangle object by its properties or keys.
