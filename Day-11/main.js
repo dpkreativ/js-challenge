@@ -69,4 +69,8 @@ let [fin, est, sw, den, nor] = countries;
 
 /*3
 Destructure the rectangle object by its properties or keys.
+
+=== Solution ===
 */
+let { width, height, area, perimeter } = rectangle;
+// console.log(width, height, area, perimeter);
