@@ -32,7 +32,7 @@ Create a string that contains both single quotes and double quotes.
 === Solution ===
 */
 const randomString = "'Hello Leah', he said";
-console.log(randomString);
+// console.log(randomString);
 
 /*5
 What is the difference between null and undefined?
@@ -47,7 +47,7 @@ What is NaN in JavaScript? What is the typeof NaN?
 === Solution ===
 NaN means that a value is not a number and cannot be converted to a number... the typeof NaN is number
 */
-console.log(parseInt("bread"));
+// console.log(parseInt("bread"));
 
 /*7
 You can declare a variable by typing let thing;. What is the value of thing?
@@ -55,3 +55,5 @@ You can declare a variable by typing let thing;. What is the value of thing?
 === Solution ===
 The value of thing is "undefined"
 */
+
+// ========= { BOOLEAN LOGIC } =========
