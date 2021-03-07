@@ -60,13 +60,13 @@ The value of thing is "undefined"
 /* === Part I ===
 Write down what the following statements will return. Try to figure this out before putting the commands in the chrome console.
 
-1. 2 == "2";
-2. 2 === 2;
-3. 10 % 3;
-4. 10 % 3 === 1;
-5. true && false;
-6. false || true;
-7. true || false;
+1. 2 == "2"; (true)
+2. 2 === 2; (true)
+3. 10 % 3; (1)
+4. 10 % 3 === 1; (true)
+5. true && false; (false)
+6. false || true; (true)
+7. true || false; (true)
 
 /* === Part II ===
 Answer the following questions about this code block:
@@ -78,9 +78,9 @@ if(isLearning){
     console.log("Pretty sure you are learning....");
 }
 
-1. What should the above code console.log?
+1. What should the above code console.log? ("Keep it up")
 
-2. Why do we not need to specify if(isLearning === true)? Why does if(isLearning) work on its own?
+2. Why do we not need to specify if(isLearning === true)? Why does if(isLearning) work on its own? (because since it has already been assigned a boolean value, the if statement will always check if the the variable is true, and then execute else if it is false.)
 
 let firstvariable;
 let secondvariable = "";
@@ -96,14 +96,23 @@ if(firstvariable){
 } else {
     console.log("fourth");
 }
-1. What should the above code console.log? Why?
-2. What is the value of firstvariable when it is initialized?
-3. Is the value of firstvariable a "truthy" value? Why?
-4. Is the value of secondvariable a "truthy" value? Why?
-5. Is the value of thirdvariable a "truthy" value? Why?
+1. What should the above code console.log? Why? (it will console.log "Third", because the first variable returns undefined which is a falsy value, the second variable is an empty string which is also a falsy value, the third value is a true value and since the if-else statement says firstvariable || thirdvariable, it means it's true and so it will run.)
+2. What is the value of firstvariable when it is initialized? (undefined)
+3. Is the value of firstvariable a "truthy" value? Why? (no it is not, because it is undefined)
+4. Is the value of secondvariable a "truthy" value? Why? (no it is not, because it is an empty string)
+5. Is the value of thirdvariable a "truthy" value? Why? (yes it is. because it is defined as a number that is not 0)
 
 /* === Part III ===
 1. Research Math.random here and write an if statement that console.log's "Over 0.5" if Math.random returns a number greater than 0.5. Otherwise console.log "Under 0.5".
+=== Solution ===
+let randomNumber = Math.random();
+if (randomNumber > 0.5) {
+  console.log("Over O.5");
+} else if (randomNumber < 0.5) {
+  console.log("Under 0.5");
+} else {
+  console.log("exactly 0.5")
+}
 
-2. What is a falsey value? List all the falsey values in JavaScript.
+2. What is a falsey value? List all the falsey values in JavaScript. (a falsey value is a value in JavaScript that will always return a boolean of false. They  are null, undefined, "", 0, NaN, false)
 */
