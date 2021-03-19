@@ -18,6 +18,11 @@ points = ['-1', '2', '-4', '-3', '-1', '0', '4', '8']
 sortedPoints =  [-4, -3, -1, -1, 0, 2, 4, 8]
 distance = 12
 */
+const points = ["-12", "-4", "-3", "-1", "0", "4", "8"];
+const sortedPoints = points.map((arr) => Number(arr)).sort((a, b) => a - b);
+const distance =
+  Math.abs(sortedPoints[0]) + sortedPoints[sortedPoints.length - 1];
+console.log(distance);
 
 /*3
 Write a pattern which identify if a string is a valid JavaScript variable
