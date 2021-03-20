@@ -13,6 +13,8 @@ console.table(countries);
 
 /*2
 Display the users object as a table
+
+=== Solution ===
 */
 const users = [
   {
@@ -47,6 +49,8 @@ const users = [
 console.table(users);
 /*3
 Use console.group() to group logs
+
+=== Solution ===
 */
 const names = ["Asabeneh", "Brook", "David", "John"];
 
