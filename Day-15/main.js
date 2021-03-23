@@ -33,3 +33,6 @@ Create a Dog and Cat child class from the Animal Class.
 */
 const dog = new Animal("Bruno", 2, "brown", 4);
 console.log(dog.getAnimalInfo());
+
+const child = new Animal("David", 13, "dark-chocolate", 2);
+console.log(child.getAnimalInfo());
