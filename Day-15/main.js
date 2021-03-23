@@ -31,3 +31,5 @@ Create a Dog and Cat child class from the Animal Class.
 
 === Solution ===
 */
+const dog = new Animal("Bruno", 2, "brown", 4);
+console.log(dog.getAnimalInfo());
