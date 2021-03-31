@@ -43,7 +43,16 @@ const txt = `{
             "CSS",
             "JavaScript",
             "React",
-            "Redux"
+            "Redux",
+            "MongoDB",
+            "Express",
+            "Python",
+            "Kubernetes",
+            "Django",
+            "Google Cloud",
+            "AWS",
+            "Perl",
+            "PHP"
         ],
         "age": 30,
         "isLoggedIn": true,
@@ -164,9 +173,20 @@ Find the the user who has many skills from the variable stored in txt.
 
 === Solution ===
 */
-const newTxtObj = JSON.parse(txt, (key, value) => {
-  let skillsNumber = key == "skills" ? value.length : value;
-  return skillsNumber;
-});
+const displayUserWithMostSkills = () => {
+  const newTxtObj = JSON.parse(txt, (key, value) => {
+    let skillsToNumber = key == "skills" ? value.length : value;
+    return skillsToNumber;
+  });
 
-console.log(newTxtObjJSON);
+  const objArray = Object.entries(newTxtObj);
+
+  const getSkills = objArray.map((arr) => arr[1].skills);
+
+  const maxSkillIndex = getSkills.indexOf(Math.max(...getSkills));
+
+  const findUser = objArray[maxSkillIndex][0];
+
+  return findUser;
+};
+console.log(displayUserWithMostSkills());
