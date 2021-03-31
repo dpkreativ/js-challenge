@@ -131,4 +131,8 @@ console.log(isMarriedJSON);
 
 /*4
 Stringify the student object
+
+=== Solution ===
 */
+const studentJSON = JSON.stringify(student);
+console.log(studentJSON);
