@@ -161,4 +161,12 @@ const txtObj = JSON.parse(txt);
 
 /*2
 Find the the user who has many skills from the variable stored in txt.
+
+=== Solution ===
 */
+const newTxtObj = JSON.parse(txt, (key, value) => {
+  let skillsNumber = key == "skills" ? value.length : value;
+  return skillsNumber;
+});
+
+console.log(newTxtObjJSON);
