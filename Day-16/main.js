@@ -111,7 +111,7 @@ Change skills array to JSON using JSON.stringify()
 === Solution ===
 */
 const skillsJSON = JSON.stringify(skills);
-console.log(skillsJSON);
+// console.log(skillsJSON);
 
 /*2
 Stringify the age variable
@@ -119,7 +119,7 @@ Stringify the age variable
 === Solution ===
 */
 const ageJSON = JSON.stringify(age);
-console.log(ageJSON);
+// console.log(ageJSON);
 
 /*3
 Stringify the isMarried variable
@@ -127,7 +127,7 @@ Stringify the isMarried variable
 === Solution ===
 */
 const isMarriedJSON = JSON.stringify(isMarried);
-console.log(isMarriedJSON);
+// console.log(isMarriedJSON);
 
 /*4
 Stringify the student object
@@ -135,12 +135,20 @@ Stringify the student object
 === Solution ===
 */
 const studentJSON = JSON.stringify(student);
-console.log(studentJSON);
+// console.log(studentJSON);
 
 // Exercises 2
 /*1
 Stringify the students object with only firstName, lastName and skills properties
+
+=== Solution ===
 */
+const newStudentJSON = JSON.stringify(
+  student,
+  ["firstName", "lastName", "skills"],
+  4
+);
+console.log(newStudentJSON);
 
 // Exercises 3
 /*1
