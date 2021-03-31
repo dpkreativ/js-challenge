@@ -148,12 +148,16 @@ const newStudentJSON = JSON.stringify(
   ["firstName", "lastName", "skills"],
   4
 );
-console.log(newStudentJSON);
+// console.log(newStudentJSON);
 
 // Exercise 3
 /*1
 Parse the txt JSON to object.
+
+=== Solution ===
 */
+const txtObj = JSON.parse(txt);
+// console.log(txtObj);
 
 /*2
 Find the the user who has many skills from the variable stored in txt.
