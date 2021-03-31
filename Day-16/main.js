@@ -115,7 +115,11 @@ console.log(skillsJSON);
 
 /*2
 Stringify the age variable
+
+=== Solution ===
 */
+const ageJSON = JSON.stringify(age);
+console.log(ageJSON);
 
 /*3
 Stringify the isMarried variable
