@@ -123,7 +123,11 @@ console.log(ageJSON);
 
 /*3
 Stringify the isMarried variable
+
+=== Solution ===
 */
+const isMarriedJSON = JSON.stringify(isMarried);
+console.log(isMarriedJSON);
 
 /*4
 Stringify the student object
