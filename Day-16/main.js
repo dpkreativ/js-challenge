@@ -137,7 +137,7 @@ Stringify the student object
 const studentJSON = JSON.stringify(student);
 // console.log(studentJSON);
 
-// Exercises 2
+// Exercise 2
 /*1
 Stringify the students object with only firstName, lastName and skills properties
 
@@ -150,7 +150,7 @@ const newStudentJSON = JSON.stringify(
 );
 console.log(newStudentJSON);
 
-// Exercises 3
+// Exercise 3
 /*1
 Parse the txt JSON to object.
 */
