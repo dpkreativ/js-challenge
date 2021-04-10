@@ -6,3 +6,7 @@ Read the countries API using fetch and print the name of country, capital, langu
 
 === Solution ===
 */
+fetch(countriesAPI)
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
