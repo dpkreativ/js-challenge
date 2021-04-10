@@ -8,5 +8,15 @@ Read the countries API using fetch and print the name of country, capital, langu
 */
 fetch(countriesAPI)
   .then((response) => response.json())
-  .then((data) => console.log(data))
+  .then((data) =>
+    data.forEach((obj) =>
+      console.log({
+        name: obj.name,
+        capital: obj.capital,
+        languages: obj.languages,
+        population: obj.population,
+        area: obj.area,
+      })
+    )
+  )
   .catch((err) => console.log(err));
