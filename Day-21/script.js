@@ -6,10 +6,10 @@ const anagram = (s) => {
   if (s.length % 2 !== 0) {
     return -1;
   }
-  sToArray = s.split("");
-  firstHalf = sToArray.slice(0, sToArray.length / 2);
-  secondHalf = sToArray.slice(sToArray.length / 2, sToArray.length);
-  count = [];
+  let sToArray = s.split("");
+  let firstHalf = sToArray.slice(0, sToArray.length / 2);
+  let secondHalf = sToArray.slice(sToArray.length / 2, sToArray.length);
+  let count = [];
   firstHalf.forEach((arr) => (secondHalf.includes(arr) ? "" : count.push(arr)));
   return count.length;
 };
