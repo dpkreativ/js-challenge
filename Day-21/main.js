@@ -12,21 +12,23 @@ Get get each of the the paragraph using document.querySelector('#id') and by the
 
 === Solution ===
 */
-const firstParagraph = document.querySelector("#p1");
-const secondParagraph = document.querySelector("#p2");
-const thirdParagraph = document.querySelector("#p3");
-const fourthParagraph = document.querySelector("#p4");
+// const firstParagraph = document.querySelector("#p1");
+// const secondParagraph = document.querySelector("#p2");
+// const thirdParagraph = document.querySelector("#p3");
+// const fourthParagraph = document.querySelector("#p4");
 
-console.log(firstParagraph);
-console.log(secondParagraph);
-console.log(thirdParagraph);
-console.log(fourthParagraph);
+// console.log(firstParagraph);
+// console.log(secondParagraph);
+// console.log(thirdParagraph);
+// console.log(fourthParagraph);
 
 /*3
 Get all the p as nodeList using document.querySelectorAll(tagname) and by their tag name
 
 === Solution ===
 */
+const allParagraphs = document.querySelectorAll("p");
+console.log(allParagraphs);
 
 /*4
 Loop through the nodeList and get the text content of each paragraph
