@@ -49,3 +49,8 @@ Set id and class attribute for all the paragraphs using different attribute sett
 
 === Solution ===
 */
+allParagraphs[0].setAttribute("class", "paragraph-1");
+allParagraphs[1].className = "paragraph-2";
+allParagraphs[2].classList.add("paragraph-3");
+allParagraphs[3].id = "p-4";
+console.log(allParagraphs);
