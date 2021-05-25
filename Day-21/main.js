@@ -35,6 +35,7 @@ Loop through the nodeList and get the text content of each paragraph
 
 === Solution ===
 */
+const pText = allParagraphs.forEach((arr) => (arr.textContent = "a paragraph"));
 
 /*5
 Set a text content to paragraph the fourth paragraph,Fourth Paragraph
