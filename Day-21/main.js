@@ -4,6 +4,8 @@ Create an index.html file and put four p elements as above: Get the first paragr
 
 === Solution ===
 */
+const firstParagraph = document.querySelector("p");
+console.log(firstParagraph);
 
 /*2
 Get get each of the the paragraph using document.querySelector('#id') and by their id
