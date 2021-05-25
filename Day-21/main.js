@@ -42,6 +42,7 @@ Set a text content to paragraph the fourth paragraph,Fourth Paragraph
 
 === Solution ===
 */
+document.querySelector("#p4").textContent = "Fourth Paragraph";
 
 /*6
 Set id and class attribute for all the paragraphs using different attribute setting methods
