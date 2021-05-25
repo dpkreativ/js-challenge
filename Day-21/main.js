@@ -4,14 +4,23 @@ Create an index.html file and put four p elements as above: Get the first paragr
 
 === Solution ===
 */
-const firstParagraph = document.querySelector("p");
-console.log(firstParagraph);
+// const firstParagraph = document.querySelector("p");
+// console.log(firstParagraph);
 
 /*2
 Get get each of the the paragraph using document.querySelector('#id') and by their id
 
 === Solution ===
 */
+const firstParagraph = document.querySelector("#p1");
+const secondParagraph = document.querySelector("#p2");
+const thirdParagraph = document.querySelector("#p3");
+const fourthParagraph = document.querySelector("#p4");
+
+console.log(firstParagraph);
+console.log(secondParagraph);
+console.log(thirdParagraph);
+console.log(fourthParagraph);
 
 /*3
 Get all the p as nodeList using document.querySelectorAll(tagname) and by their tag name
